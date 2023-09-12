@@ -21,5 +21,3 @@ The function kalman.standard.errors.R computes confidence intervals and correspo
 The function calculate.covariance.R calculates the covariance matrix of the initial state from the gradients of the likelihood function. The function format.output.R generates a dataframe to be written to a CSV containing one-sided estimates, parameter values, standard errors, and other statistics of interest.
 
 The function calculate.covariance.R calculates the covariance matrix of the initial state from the gradients of the likelihood function. The function format.output.R generates a dataframe to be written to a CSV containing one-sided estimates, parameter values, standard errors, and other statistics of interest.
-
-For each economy, the final section of run.hlw.R reads in prepared data, runs the HLW estimation by calling run.hlw.estimation.R, and saves one-sided estimates and a spreadsheet of output.
