@@ -6,8 +6,6 @@ The function run.hlw.estimation.R is called by run.hlw.R once for each economy. 
 
 The programs unpack.parameters.stageX.R set up coefficient matrices for the corresponding state-space models for the given parameter vectors. In all stages, the model imposes the constraint by ≥ 0.025. In stages 2 and 3, it imposes ar ≤ −0.0025. These constraints are labeled as a3.constraint and b2.constraint, respectively, in the code.
 
-The programs rstar.stageX.R run the models in stages 1-3 of the HLW estimation.
-
 The function median.unbiased.estimator.stage1.R computes the exponential Wald statistic of Andrews and Ploberger (1994) for a structural break with unknown break date from the first difference of the preliminary estimate of the natural rate of output from the stage 1 model to obtain the median unbiased estimate of λg.
 
 The function median.unbiased.estimator.stage2.R applies the exponential Wald test for an intercept shift in the IS equation at an unknown date to obtain the median unbiased estimate of λz, taking as input estimates from the stage 2 model.
