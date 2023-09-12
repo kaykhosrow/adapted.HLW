@@ -4,7 +4,7 @@ These files implement an annually adapted maximum likelihood procedure to estima
 
 The function run.hlw.estimation.R is called by run.hlw.R once for each economy. It takes as inputs the key variables for the given economy: log output, inflation, and the real and nominal short-term interest rates, as well as the specified constraints on ar and by. It calls the programs rstar.stageX.R to run the three stages of the HLW estimation. Additionally, it calls the programs median.unbiased.estimator.stageX.R to obtain the signal-to-noise ratios λg and λz. 
 
-The programs unpack.parameters.stageX.R set up coefficient matrices for the corresponding state-space models for the given parameter vectors. In all stages, we impose the constraint by ≥ 0.025. In stages 2 and 3, we impose ar ≤ −0.0025. These constraints are labeled as a3.constraint and b2.constraint, respectively, in the code.
+The programs unpack.parameters.stageX.R set up coefficient matrices for the corresponding state-space models for the given parameter vectors. In all stages, the model imposes the constraint by ≥ 0.025. In stages 2 and 3, it imposes ar ≤ −0.0025. These constraints are labeled as a3.constraint and b2.constraint, respectively, in the code.
 
 The programs rstar.stageX.R run the models in stages 1-3 of the HLW estimation.
 
